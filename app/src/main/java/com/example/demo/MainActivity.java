@@ -1,8 +1,10 @@
-package com.example.rockpaperscissorsapp;
+package com.example.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +12,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void OnClickDemoButton(View view) {
+        ImageView img = (ImageView) this.findViewById(R.id.rps);
+        img.setVisibility(View.VISIBLE);
     }
 }
